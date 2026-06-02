@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Gabriel | Contato & Propostas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+    <header class="navbar">
+        <div class="logo">JG<span>.dev</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container fade-in">
+        <section class="contact-section">
+            <h1 class="page-title">Vamos fechar um <span class="text-gradient">Freela?</span></h1>
+            <p class="page-subtitle">Preencha os detalhes da sua proposta abaixo. Responderei o mais rápido possível no seu e-mail.</p>
+
+            <form id="contact-form" action="https://formsubmit.co/dev.joaogabrieldias@gmail.com" method="POST" class="modern-form">
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Nova Proposta de Freelancer! 🚀">
+
+                <div class="input-group">
+                    <input type="text" name="name" required placeholder=" ">
+                    <label>Seu Nome / Empresa</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" required placeholder=" ">
+                    <label>Seu E-mail de Contato</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="subject" required placeholder=" ">
+                    <label>Tipo de Projeto (Ex: Site Institucional, E-commerce...)</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea name="message" rows="5" required placeholder=" "></textarea>
+                    <label>Descreva sua Proposta ou Ideia</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Proposta Mágica ✨</button>
+            </form>
+
+            <div class="contact-footer">
+                <p>Ou então, mande mensagem no WhatsApp:</p>
+                <a href="https://wa.me/5511964065637?text=Olá%20João,%20acessei%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento%20de%20projeto!" 
+                   target="_blank" 
+                   class="btn-whatsapp">
+                   Conversar no WhatsApp 💬
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
