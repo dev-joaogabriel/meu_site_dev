@@ -3,40 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Gabriel | Home</title>
+    <title>João Gabriel | Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="dark-theme">
 
-    <header class="navbar">
-        <div class="logo">JG<span>.dev</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="navbar centralizado">
+        <div class="header-content">
+            <div class="logo">MEU PORTFÓLIO</div>
+            
+            <label class="ios-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
     </header>
 
     <main class="container fade-in">
-        <section class="home-hero">
-            <div class="hero-text">
-                <h1>Olá, eu sou o <span class="text-gradient">João Gabriel</span></h1>
-                <h2>Desenvolvedor Web Front-End</h2>
-                <p>Especialista em criar interfaces modernas, rápidas e focadas em conversão para freelancers.</p>
-                
-                <div class="profile-info">
-                    <p>📧 <strong>E-mail:</strong> joao.gabriel.dias@hotmail.com</p>
-                    <p>📸 <strong>Instagram:</strong> <a href="https://instagram.com/seu_instagram" target="_blank">@seu_instagram</a></p>
-                </div>
 
-                <div class="social-buttons">
-                    <a href="https://github.com/dev-joaogabriel" target="_blank" class="btn-secondary">GitHub</a>
-                    <a href="contato.html" class="btn-primary">Me Contrate</a>
+        <section class="hero-section layout-amplo">
+            
+            <div class="hero-left">
+                <h2>Minhas Redes</h2>
+                <ul class="redes-list">
+                    <li><a href="mailto:dev.joaogabrieldias@gmail.com" target="_blank">📧 Gmail</a></li>
+                    <li><a href="https://instagram.com/seu_usuario" target="_blank">📸 Instagram</a></li>
+                    <li><a href="https://github.com/dev-joaogabriel" target="_blank">💻 GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/seu_usuario" target="_blank">👔 LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="hero-right">
+                <div class="profile-container-amplo">
+                    <div class="profile-avatar-grande">
+                        <span>Sua Foto</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="contato.html" class="btn-primary">Entre em Contato</a>
+                        <a href="#" class="btn-secondary">Baixe meu CV</a>
+                    </div>
                 </div>
             </div>
+
         </section>
+
+        <section class="about-section text-centralizado">
+            <h2>Sobre Mim</h2>
+            <div class="placeholder-box sobre-mim-espaco">
+                [Espaço reservado para o seu texto profissional no futuro]
+            </div>
+        </section>
+
+        <section class="projects-section text-centralizado">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid grid-8">
+                <div class="project-card"><span class="box-number">01</span><p>Espaço Reservado</p></div>
+                <div class="project-card"><span class="box-number">02</span><p>Espaço Reservado</p></div>
+                <div class="project-card"><span class="box-number">03</span><p>Espaço Reservado</p></div>
+                <div class="project-card"><span class="box-number">04</span><p>Espaço Reservado</p></div>
+                <div class="project-card"><span class="box-number">05</span><p>Espaço Reservado</p></div>
+                <div class="project-card"><span class="box-number">06</span><p>Espaço Reservado</p></div>
+                <div class="project-card"><span class="box-number">07</span><p>Espaço Reservado</p></div>
+                <div class="project-card"><span class="box-number">08</span><p>Espaço Reservado</p></div>
+            </div>
+        </section>
+
     </main>
 
     <script src="js/main.js"></script>
