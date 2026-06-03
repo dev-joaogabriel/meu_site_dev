@@ -75,11 +75,13 @@ body {
 }
 
 /* ==========================================================================
-   NAVBAR
+   NAVBAR (REORGANIZADA PARA JOGAR O BOTÃO PRO CANTO)
    ========================================================================== */
 .navbar {
     display: flex;
-    padding: 30px 0;
+    justify-content: space-between; /* Espaça as três sub-divs entre as pontas */
+    align-items: center;
+    padding: 30px 4%; /* Respiro nas laterais igual ao da seção Hero */
     border-bottom: 1px solid var(--border-color);
     width: 100%;
     background: rgba(11, 15, 25, 0.05);
@@ -91,11 +93,15 @@ body {
     background: rgba(248, 250, 252, 0.8);
 }
 
-.header-content {
+/* Mantém o equilíbrio para o título não sair do centro perfeito */
+.navbar-left, .navbar-right {
+    flex: 1;
     display: flex;
-    align-items: center;
-    gap: 30px;
-    position: relative;
+}
+
+.navbar-right {
+    justify-content: flex-end; 
+    padding-right: 150px;
 }
 
 .logo {
@@ -103,6 +109,8 @@ body {
     font-weight: 800;
     letter-spacing: 3px;
     text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* ==========================================================================
